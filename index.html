@@ -6,30 +6,20 @@
 <title>Ahmed & Kholoud</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=EB+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#faf7f0; --card:#ffffff; --text:#4a423b; --sub:#ab9f92;
-    --accent:#d9c9c5; --accent2:#7d6f66; --border:#ece4d7; --gold:#b9a48a;
+    --bg:#150f0d; --card:#241b17; --text:#ecdfd0; --sub:#a8917d;
+    --accent:#c79a6b; --accent2:#d9ac96; --border:#3c2e27; --gold:#cba36e;
     box-sizing:border-box;
     padding-top:env(safe-area-inset-top,0px);
     padding-bottom:env(safe-area-inset-bottom,0px);
-  }
-  @media (prefers-color-scheme: dark){
-    :root:not([data-theme="light"]){
-      --bg:#221f1c; --card:#2d2a26; --text:#f2ece2; --sub:#c9beae;
-      --accent:#d8b8b6; --accent2:#e0c9c2; --border:#4a453e; --gold:#d3bd9c;
-    }
-  }
-  :root[data-theme="dark"]{
-    --bg:#221f1c; --card:#2d2a26; --text:#f2ece2; --sub:#c9beae;
-    --accent:#d8b8b6; --accent2:#e0c9c2; --border:#4a453e; --gold:#d3bd9c;
   }
   html{scroll-padding-top:env(safe-area-inset-top,0px);}
   *{box-sizing:border-box;}
   body{
     margin:0; background:var(--bg); color:var(--text);
-    font-family:'Cormorant Garamond','Georgia','Tahoma',serif;
+    font-family:'EB Garamond','Georgia','Tahoma',serif;
     font-size:18px;
     min-height:100%; padding:32px 16px 60px;
   }
@@ -38,11 +28,11 @@
   .topbar{display:flex; justify-content:flex-end; margin-bottom:6px;}
   .lang-btn{
     background:var(--card); border:1px solid var(--gold); color:var(--accent2);
-    padding:6px 16px; border-radius:20px; font-family:'Playfair Display',serif;
+    padding:6px 16px; border-radius:20px; font-family:'Italiana',serif;
     font-size:.8em; cursor:pointer;
   }
   h1{
-    font-family:'Playfair Display', Georgia, serif;
+    font-family:'Italiana', Georgia, serif;
     text-align:center; font-size:2.4em; letter-spacing:2px; margin:8px 0 6px;
     color:var(--accent2); font-weight:600;
   }
@@ -54,7 +44,7 @@
     padding:26px; margin-bottom:22px; box-shadow:0 6px 20px rgba(140,122,88,0.08);
   }
   .card h2{
-    font-family:'Playfair Display', Georgia, serif;
+    font-family:'Italiana', Georgia, serif;
     margin-top:0; color:var(--accent2); font-size:1.25em; font-weight:600;
     letter-spacing:.5px;
   }
@@ -63,11 +53,11 @@
     background:var(--bg); border:1px solid var(--border); border-radius:12px;
     padding:14px 16px; min-width:72px; text-align:center;
   }
-  .t-box .num{font-family:'Playfair Display',serif; font-size:1.7em; font-weight:600; color:var(--accent2);}
+  .t-box .num{font-family:'Italiana',serif; font-size:1.7em; font-weight:600; color:var(--accent2);}
   .t-box .lbl{font-size:.72em; color:var(--sub); letter-spacing:.5px; text-transform:uppercase;}
   .letter{line-height:1.9; font-size:1.15em; text-align:center; font-style:italic;}
   body.ar .letter{font-style:normal; line-height:2.1;}
-  .letter h2{font-style:normal; font-family:'Playfair Display',serif;}
+  .letter h2{font-style:normal; font-family:'Italiana',serif;}
   .letter-text{white-space:pre-line;}
   .cursor{display:inline-block; animation:blink 0.8s step-start infinite;}
   @keyframes blink{50%{opacity:0;}}
@@ -103,7 +93,7 @@
   .letter-toggle{text-align:center; margin-bottom:18px;}
   .letter-btn{
     background:var(--card); border:1px solid var(--gold); color:var(--accent2);
-    padding:11px 26px; border-radius:30px; font-family:'Playfair Display',serif;
+    padding:11px 26px; border-radius:30px; font-family:'Italiana',serif;
     font-size:.95em; letter-spacing:.5px; cursor:pointer; transition:transform .2s;
   }
   .letter-btn:hover{transform:scale(1.05);}
@@ -115,21 +105,21 @@
   .love-btn{
     background:linear-gradient(135deg, var(--accent), var(--gold));
     border:none; color:#fff; padding:14px 34px; border-radius:32px;
-    font-family:'Playfair Display',serif; font-size:1.05em; letter-spacing:.5px;
+    font-family:'Italiana',serif; font-size:1.05em; letter-spacing:.5px;
     cursor:pointer; box-shadow:0 6px 16px rgba(140,110,90,0.25); transition:transform .2s;
   }
   .love-btn:active{transform:scale(0.96);}
   .toast{
     position:fixed; left:50%; bottom:26px; transform:translate(-50%,20px);
     background:var(--accent2); color:#fff; padding:12px 22px; border-radius:24px;
-    font-family:'Playfair Display',serif; font-size:.95em; opacity:0;
+    font-family:'Italiana',serif; font-size:.95em; opacity:0;
     transition:opacity .4s ease, transform .4s ease; z-index:200; white-space:nowrap;
   }
   .toast.show{opacity:1; transform:translate(-50%,0);}
 </style>
 </head>
 <body>
-<div id="splash"><span class="emoji">🤍</span></div>
+<div id="splash"><span class="emoji">❤️</span></div>
 <div class="wrap">
   <div class="topbar"><button class="lang-btn" id="langBtn">العربي</button></div>
   <div class="divider">❦</div>
@@ -149,7 +139,7 @@
         <rect id="girlArm" x="106" y="70" width="32" height="9" rx="4.5" fill="var(--gold)" style="transform-origin:138px 74.5px;"/>
       </g>
       <circle class="join-dot" cx="110" cy="78" r="6" fill="var(--accent2)"/>
-      <text class="pop-heart" x="110" y="30" text-anchor="middle">🤍</text>
+      <text class="pop-heart" x="110" y="30" text-anchor="middle">❤️</text>
     </svg>
   </div>
 
@@ -159,7 +149,7 @@
   </div>
 
   <div class="love-wrap">
-    <button class="love-btn" id="loveBtn" data-i18n="loveBtn">🤍 I love you</button>
+    <button class="love-btn" id="loveBtn" data-i18n="loveBtn">❤️ I love you</button>
   </div>
 
   <div class="letter-toggle">
@@ -167,9 +157,9 @@
   </div>
 
   <div class="card letter" id="letterCard">
-    <h2 data-i18n="letterHeading">To Kholoud</h2>
+    <h2 data-i18n="letterHeading">My Love</h2>
     <div class="letter-text" id="letterText"></div>
-    <div class="heart">🤍</div>
+    <div class="heart">❤️</div>
   </div>
 
   <div class="card">
@@ -195,17 +185,17 @@
   const I18N = {
     en:{
       sub:"Just the two of us", together:"Together Since",
-      loveBtn:"🤍 I love you", letterOpen:"💌 Open the Letter", letterClose:"✖ Close the Letter",
-      letterHeading:"To Kholoud", memories:"🦢 My whole world", photoSoon:"Photo coming soon",
+      loveBtn:"❤️ I love you", letterOpen:"💌 Open the Letter", letterClose:"✖ Close the Letter",
+      letterHeading:"My Love", memories:"🦢 My whole world", photoSoon:"Photo coming soon",
       dLabels:["Days","Hours","Minutes","Seconds"],
-      sent:"Sent 🤍", received:"💌 They just said: I love you"
+      sent:"Sent ❤️", received:"💌 They just said: I love you"
     },
     ar:{
       sub:"احنا الاتنين بس", together:"احنا مع بعض من",
-      loveBtn:"🤍 بحبك", letterOpen:"💌 افتح الخطاب", letterClose:"✖ اقفل الخطاب",
-      letterHeading:"لخلود", memories:"🦢 دنيتي كلها", photoSoon:"الصورة هتتحط قريب",
+      loveBtn:"❤️ بحبك", letterOpen:"💌 افتح الخطاب", letterClose:"✖ اقفل الخطاب",
+      letterHeading:"حبيبي", memories:"🦢 دنيتي كلها", photoSoon:"الصورة هتتحط قريب",
       dLabels:["يوم","ساعة","دقيقة","ثانية"],
-      sent:"اتبعتت 🤍", received:"💌 قالك: بحبك"
+      sent:"اتبعتت ❤️", received:"💌 قالك: بحبك"
     }
   };
 
@@ -263,14 +253,14 @@
     let i = 0;
     el.textContent = '';
     typeTimer = setInterval(()=>{
-      i += 2;
+      i += 1;
       if(i < text.length){
         el.innerHTML = text.slice(0,i).replace(/\n/g,'<br>') + '<span class="cursor">|</span>';
       } else {
         el.innerHTML = text.replace(/\n/g,'<br>');
         clearInterval(typeTimer);
       }
-    }, 22);
+    }, 70);
   }
 
   document.getElementById('letterBtn').addEventListener('click', function(){
